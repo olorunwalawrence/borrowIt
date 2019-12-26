@@ -5,19 +5,11 @@ background:#15549A;
 display:flex;
 height:50px;
 color:#83BCFA;
-
-`;
-export const Container = Style.div`
-display:flex;
-padding-top:15px
 width:100%;
-@media(min-width:500px){
-  
-}
-
 `;
 
 export const WelcomeText = Style.p`
+padding-top:12px;
 @media(max-width:450px){
   display:${props => props.Display}
 }
@@ -33,6 +25,8 @@ width:700px
 `;
 
 export const para = Style.div`
+display:flex;
+justify-content:space-between;
 @media (min-width:450px){
 
  
@@ -41,7 +35,15 @@ export const para = Style.div`
 
 export const Span = Style.span`
 flex:1;
-padding-left:30px;
+margin-left:30px
+`;
 
+export const Container = Style.div`
+text-align:right;
+padding:15px 55px 0px 0px;
 
+width:100%;
+@media(min-width:500px){
+  
+}
 `;
