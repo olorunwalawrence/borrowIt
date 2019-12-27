@@ -33,8 +33,8 @@ export const Show = Style.div`
 
 export const Opacity = Style.div`
 background:#15549A;
-height:400px
+height:400px;
 z-index:10;
 opacity:.0.5;
-position:relative
+position:relative;
 `;

@@ -18,28 +18,28 @@ font-size:${props => props.size}
 `;
 
 export const Para = Style.p`
-color:${props => props.color}
+color:${props => props.color};
 margin-top:${props => props.marginTop};
-text-align:${props => props.textALign}
+text-align:${props => props.textALign};
 padding:${props => props.padding};
 font-style :${props => props.Style};
 line-height :${props => props.lineHignt};
-font-weight:${props => props.fontWeight}
-font-size:${props => props.fontSize}
+font-weight:${props => props.fontWeight};
+font-size:${props => props.fontSize};
 `;
 
 export const wrapper = Style.div`
-display:${props => props.display}
-margin: ${props => props.margin}
-width:${props => props.width}
-height:${props => props.height}
-background:${props => props.background}
-margin-bottom:${props => props.marginBottom}
+display:${props => props.display};
+margin: ${props => props.margin};
+width:${props => props.width};
+height:${props => props.height};
+background:${props => props.background};
+margin-bottom:${props => props.marginBottom};
 
 `;
 export const ApplicationHeader = Style.h1`
 text-align:center;
-margin-top:100px
+margin-top:100px;
 `;
 export const ApllicationPara = Style.div``;
 export const ApplicationWrapper = Style.div`
@@ -79,25 +79,25 @@ export const LinkWrapper = Style.div`
 width:100%;
 display:flex;
 justify-content:center;
-margin-bottom:30px
+margin-bottom:30px;
 `;
 
 export const Link = Style.div`
 marign:1px auto;
 width:45%;
 border:1px solid #dee4ee;
-padding:15px
+padding:15px;
 text-align:center;
 color:#9aa9c3;
 font-weight:700;
-text-transform:capitalize
+text-transform:capitalize;
 `;
 export const imageWrapper = Style.div`
 display:flex;
 justify-content:space-between;
 margin-right:140px;
 color:white;
-margnin-bottom:150px
+margnin-bottom:150px;
 `;
 
 export const img = Style.img`

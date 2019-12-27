@@ -15,8 +15,8 @@ margin:20px 50px 0px 25px;
 `;
 
 export const Bottom = Style.button`
-padding:17px
-background:#f51f8A
+padding:17px;
+background:#f51f8A;
 width:10%;
 border:none;
 color:white;
