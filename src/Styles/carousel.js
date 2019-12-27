@@ -21,7 +21,7 @@ width:93%;
 export const Row = Style.div`
 margin:1px auto;
 width:50%;
-color:#3c4d6b
+color:#3c4d6b;
 `;
 export const Header = Style.h1`
 padding-top:50px;
@@ -69,7 +69,7 @@ export const btnWrapper = Style.div`
 display:flex;
 justify-content:space-between
 margin-bottom:10px;
-width:98%
+width:98%;
 `;
 
 export const Span = Style.span`
