@@ -10,7 +10,7 @@ color:blue;
 height:100px
 border-right:0.2px solid #778191;
 display:flex;
-justiffy-item:space-between
+justiffy-item:space-between;
 
 `;
 export const Diviver = Style.div``;
@@ -25,7 +25,7 @@ font-size:16px;
 
 `;
 export const FontAwesome = Style.i`
-font-size:48px
+font-size:48px;
 color:#17a2b8;
 padding:25px 70px 0px 30px;
 

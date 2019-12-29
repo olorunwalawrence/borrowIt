@@ -35,7 +35,7 @@ justify-content:space-between;
 
 export const Span = Style.span`
 flex:1;
-margin-left:30px
+margin-left:30px;
 `;
 
 export const Container = Style.div`

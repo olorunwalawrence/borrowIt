@@ -105,7 +105,7 @@ export const Applicationprocess = () => {
 							<>
 								<Fragment>
 									<Card.Card
-										width="400px"
+										width="380px"
 										background="#fff"
 										height="220px"
 										fontFamily="Merriweather,serif;"
