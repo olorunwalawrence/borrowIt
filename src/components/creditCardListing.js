@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import { BorrowCard } from '../components/borrowCard';
 import * as BC from '../Styles/borrowcard';
 import * as CD from '../Styles/creditCardListing';
@@ -18,11 +19,16 @@ export const CreditCardListing = () => {
 									{' '}
 									<CD.Div display="flex" justifyContent="space-around" marginTop="30px">
 										<BC.BorrowWrapper background="#20c997" color="#fff">
-											<BorrowCard cardtype={'Money Back'} />
+											<Link to="/card-single">
+												{' '}
+												<BorrowCard cardtype={'Money Back'} />
+											</Link>
 										</BC.BorrowWrapper>
 									</CD.Div>
 									<CD.content>
-										<CD.contentHeader>Borrow Money Card</CD.contentHeader>
+										<CD.contentHeader>
+											<Link to="/card-single">Borrow Money Card</Link>
+										</CD.contentHeader>
 										<CD.UL>
 											<CD.LI>2 Reward Points for every $150 spends.</CD.LI>
 											<CD.LI>Redeem Reward points as CashBack on your Credit Card</CD.LI>

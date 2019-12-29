@@ -73,7 +73,15 @@ margin-left:${props => props.marginLeft};
 flex:${props => props.flex};
 padding:${props => props.padding};
 margin-Right:${props => props.marginRight};
-margin-top:${props => props.marginTop}
+margin-top:${props => props.marginTop};
+height:${props => props.height};
+background:${props => props.bgcolor};
+margin:${props => props.margin};
+position:${props => props.position};
+top:${props => props.top};
+padding-top:${props => props.paddingTop};
+border-bottom:${props => props.borderBotton}
+border : ${props => props.border};
 `;
 export const Date = Style.div`
 margin-right: ${props => props.marginRight};
