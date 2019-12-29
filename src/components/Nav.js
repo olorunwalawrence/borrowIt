@@ -2,7 +2,8 @@ import React, { Fragment, useState } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import * as NC from '../Styles/Nav';
 import { Search } from '../components/search';
-import { Jumbotron } from '../components/jumbotron';
+import { Link } from 'react-router-dom';
+
 import { TopNav } from '../components/TopNav';
 
 export const Navigation = () => {
@@ -29,16 +30,24 @@ export const Navigation = () => {
 						<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 						<Navbar.Collapse id="responsive-navbar-nav">
 							<Nav className="mr-auto">
-								<Nav.Link href="#features">Home</Nav.Link>
+								<Nav.Link>
+									<Link to="/"> Home</Link>
+								</Nav.Link>
 
 								<NavDropdown title="LOAN PRODUCT" id="collasible-nav-dropdown">
-									<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+									<NavDropdown.Item>
+										<Link to="/credit-card"> Credit card</Link>
+									</NavDropdown.Item>
 									<NavDropdown.Divider />
-									<NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+									<NavDropdown.Item href="#action/3.2">Personal Loan</NavDropdown.Item>
 									<NavDropdown.Divider />
-									<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+									<NavDropdown.Item href="#action/3.3">Car Loan</NavDropdown.Item>
 									<NavDropdown.Divider />
-									<NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+									<NavDropdown.Item href="#action/3.4">Home loan</NavDropdown.Item>
+									<NavDropdown.Divider />
+									<NavDropdown.Item href="#action/3.4">Educational loan</NavDropdown.Item>
+									<NavDropdown.Divider />
+									<NavDropdown.Item href="#action/3.4">Proffessional loan</NavDropdown.Item>
 								</NavDropdown>
 
 								<NavDropdown title="LOAN PRODUCT" id="collasible-nav-dropdown">
@@ -90,16 +99,6 @@ export const Navigation = () => {
 					</Navbar>
 				</NC.Container>
 			</NC.NavContainer>
-			<NC.Opacity>
-				{' '}
-				<Jumbotron />
-			</NC.Opacity>
-
-			{/* <LoanCards />
-			<Slider />
-			<Applicationprocess />
-
-			<Footer /> */}
 		</Fragment>
 	);
 };

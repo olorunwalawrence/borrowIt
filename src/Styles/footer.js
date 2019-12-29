@@ -5,6 +5,9 @@ height:93vh;
 background:#343a40;
 width:100%;
 
+margin:1px auto;
+
+
 `;
 
 export const FooterTopContainer = Style.div`
@@ -28,6 +31,8 @@ width:80%;
 
 export const secondSection = Style.div`
 display:flex;
+width:93%;
+margin:1px auto;
 
 `;
 export const SectionText = Style.div`
