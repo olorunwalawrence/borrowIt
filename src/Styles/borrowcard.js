@@ -1,10 +1,13 @@
 import Style from 'styled-components';
 
 export const BorrowContainer = Style.div`
-height:200px;
-max-width:320px;
+height:205px;
+max-width:330px;
 font-size:13px;
+`;
 
+export const ChipContainer = Style.div`
+  
 `;
 
 export const BorrowWrapper = Style.div`
@@ -14,7 +17,9 @@ Background:${props => props.background};
 color:${props => props.color};
 font-size:13px
 `;
-export const Chip = Style.div``;
+export const Chip = Style.div`
+border-radius:20px;
+`;
 export const Img = Style.img`
 margin-left:40px;
 margin-bottom:10px;
@@ -31,7 +36,7 @@ left: 20px;
 export const SecondCircle = Style.div`
 width:40px;
 height:40px;
-background:green;
+background:gold;
 border-radius:100px;
 `;
 export const Span = Style.span`
@@ -44,17 +49,20 @@ justify-content:space-between
 `;
 export const Para = Style.p`
 margin: ${props => props.margin};
-padding-top:${props => props.marginTop}
-
+padding-top:${props => props.paddingTop};
+margin-left:${props => props.marginLeft};
 `;
 export const Dash = Style.div`
-background:red;
+background:#f4f6f8;
+
 width:50px;
 border-radius:15px;
 height:8px;
 `;
 export const cardFooter = Style.div`
-margin:10px;
+margin:2px;
+margin-left:20px
+
 padding-bottom:10px
 `;
 export const Div = Style.div`

@@ -1,24 +1,26 @@
 import React from 'react';
 import * as BC from '../Styles/borrowcard';
 
-export const BorrowCard = () => {
+export const BorrowCard = props => {
 	return (
 		<BC.BorrowContainer>
-			<BC.BorrowWrapper background="gold" color="#fff">
+			<BC.BorrowWrapper color="#fff">
 				<BC.Top display="flex">
 					<BC.Div>
-						<BC.Para margin="10px">
+						<BC.Para marginLeft="20px" paddingTop="10px">
 							<BC.Span>Borrow</BC.Span>
 							<br /> Credit card
 						</BC.Para>
 					</BC.Div>
 					<BC.Para margin="10px">
-						<BC.Span>money Back</BC.Span>
+						<BC.Span>{props.cardtype}</BC.Span>
 					</BC.Para>
 				</BC.Top>
 
 				<BC.Chip>
-					<BC.Img src={require('../assests/images/chip.PNG')} />
+					<BC.ChipContainer>
+						<BC.Img src={require('../assests/images/chip.PNG')} />
+					</BC.ChipContainer>
 				</BC.Chip>
 				<BC.Div display="flex" marginLeft="41px" width="70%" justifyContent="space-between">
 					<BC.Dash></BC.Dash>

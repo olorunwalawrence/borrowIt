@@ -79,7 +79,7 @@ export const Footer = () => {
 			</FT.Footer>
 
 			<FT.Littlefooter>
-				<FT.Para align="left">&copy 2019| Loan company Business</FT.Para>
+				<FT.Para align="left">copy right 2019| Loan company Business</FT.Para>
 				<FT.Para align="right">Terms of use | private policy</FT.Para>
 			</FT.Littlefooter>
 		</>
