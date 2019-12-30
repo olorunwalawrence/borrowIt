@@ -8,21 +8,24 @@ export const Footer = () => {
 			<FT.Footer>
 				<FT.FooterTopContainer>
 					<FT.IMG src={require('../assests/images/logo.png')}></FT.IMG>
-					<FT.Newsletter>Signup Our Newsletter</FT.Newsletter>
-					<FRM.Form>
-						<FRM.Input placeholder="write an email" padding="9px" width="200px" />
-						<FRM.Button
-							width="100px"
-							align="center"
-							padding="10px"
-							fontWeight="500"
-							background="#f51f8a"
-							color="white"
-							border="none"
-						>
-							Go!
-						</FRM.Button>
-					</FRM.Form>
+					<FT.wrapper>
+						<FT.Newsletter>Signup Our Newsletter</FT.Newsletter>
+						<FRM.Form width="60%">
+							<FRM.Input placeholder="write an email" padding="9px" width="70%" />
+							<FRM.Button
+								width="25%"
+								align="center"
+								padding="10px"
+								fontWeight="500"
+								background="#f51f8a"
+								color="white"
+								border="none"
+								height="46px"
+							>
+								Go!
+							</FRM.Button>
+						</FRM.Form>
+					</FT.wrapper>
 				</FT.FooterTopContainer>
 
 				<FT.divider></FT.divider>
@@ -77,10 +80,11 @@ export const Footer = () => {
 					</FT.SecondSection2>
 				</FT.secondSection>
 			</FT.Footer>
-
 			<FT.Littlefooter>
-				<FT.Para align="left">copy right 2019| Loan company Business</FT.Para>
-				<FT.Para align="right">Terms of use | private policy</FT.Para>
+				<FT.footerWrapper>
+					<FT.Para align="left">&copy; copy right 2019| olorunwa lawrence</FT.Para>
+					<FT.Para align="right">Terms of use | private policy</FT.Para>
+				</FT.footerWrapper>
 			</FT.Littlefooter>
 		</>
 	);

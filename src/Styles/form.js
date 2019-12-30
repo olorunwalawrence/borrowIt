@@ -14,6 +14,8 @@ font-weight: ${props => props.fontWeight};
 padding:${props => props.padding};
 text-align:${props => props.align};
 border:${props => props.border};
+height:${props => props.height};
 `;
 export const Form = Style.form`
+width:${props => props.width};
 `;

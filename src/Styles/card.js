@@ -12,6 +12,8 @@ margin:${props => props.margin};
 flex:${props => props.flex};
 font-family:${props => props.fontFamily};
 margin-bottom:${props => props.marginBottom};
+text-align:${props => props.textAlign};
+padding:${props => props.padding};
 `;
 
 export const img = Style.i`
@@ -28,5 +30,5 @@ display:${props => props.display};
 margin:${props => props.margin};
 width:${props => props.width};
 justify-content:${props => props.justifyContent};
-
+box-shadow:${props => props.boxshadow};
 `;

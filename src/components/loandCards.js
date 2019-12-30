@@ -6,22 +6,22 @@ export const LoanCards = () => {
 		{
 			img: 'fa fa-home',
 			loanRate: '3.74%',
-			title: 'HOME LOAN',
+			title: 'Credit Card',
 		},
 		{
 			img: 'fa fa-home',
 			loanRate: '3.74%',
-			title: 'HOME LOAN',
+			title: 'Cash Loan',
 		},
 		{
 			img: 'fa fa-home',
 			loanRate: '3.74%',
-			title: 'HOME LOAN',
+			title: 'Intrest rate',
 		},
 		{
 			img: 'fa fa-home',
 			loanRate: '3.74%',
-			title: 'HOME LOAN',
+			title: 'Reward',
 		},
 	];
 	return (

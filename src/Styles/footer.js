@@ -1,45 +1,58 @@
 import Style from 'styled-components';
 
 export const Footer = Style.div`
-height:93vh;
+
 background:#343a40;
 width:100%;
-
 margin:1px auto;
+`;
+export const wrapper = Style.div`
+display:flex;
+justify-content:space-between;
+width:70%;
+`;
 
-
+export const footerWrapper = Style.div`
+width:80%;
+margin:0px auto;
+display:flex;
+justify-content:space-between;
 `;
 
 export const FooterTopContainer = Style.div`
 display:flex;
-justify-content:space-around;
+justify-content:space-between;
 height:auto;
-padding:50px;
+padding:50px 0px;
+width:80%;
+margin:0px auto;
 `;
 export const IMG = Style.img``;
 
 export const Newsletter = Style.h3`
 color:#778191;
+width:45%;
 
 `;
 
 export const divider = Style.hr`
-background:red;
+background:#778191;
 margin:1px auto;
 width:80%;
 `;
 
 export const secondSection = Style.div`
 display:flex;
-width:93%;
+width:80%;
 margin:1px auto;
+padding-bottom:50px;
 
 `;
 export const SectionText = Style.div`
 flex:1;
 color:#778191;
 text-align:justify;
-margin:50px;
+margin:50px 30px 10px 0px
 
 `;
 export const sectiontextWrapper = Style.div`
@@ -48,13 +61,10 @@ color:#778191;
 flex:1;
 `;
 export const AddressText = Style.p`
-margin:50px;
-padding:20px;
 font-weight:700;
+margin-right:50px;
 `;
 export const Call = Style.p`
-margin:50px;
-padding:20px;
 font-weight:700;
 `;
 export const Span = Style.span`
@@ -65,13 +75,12 @@ font-weight:700;
 export const fontAwesome = Style.i``;
 export const SectionNav1 = Style.div`
 flex:1;
-padding:10px;
 `;
 export const SectionNa2 = Style.div`
-flex:1;
+
 `;
 export const sectonNav3 = Style.div`
-flex:1;
+
 `;
 export const NavWrapper = Style.div`
 display:flex;
@@ -79,28 +88,29 @@ margin-top:50px;
 `;
 
 export const SecondSection1 = Style.div`
-flex:1;
+width:60%;
 `;
 export const SecondSection2 = Style.div`
-flex:1;
+width:40%;
 color:#778191;
 `;
 
 export const List = Style.li`
-padding-top:10px;
+padding-bottom:10px;
 `;
 
 export const Littlefooter = Style.div`
-height:7vh;
+max-height:3rem
 display:flex;
 background:#16191e;
+margin:-1px auto;
 `;
 
 export const Para = Style.p`
 color:#778191;
 text-align: ${props => props.align};
-flex:1;
-padding:10px 50px 0px 50px;
+padding-top:10px;
+
 
 
 `;
