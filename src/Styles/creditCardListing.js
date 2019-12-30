@@ -80,7 +80,7 @@ export const Img = Style.img`
 export const CardContainer = Style.div`
 background:#fff;
 height:auto;
-width:93%;
+width:81%;
 margin:1px auto;
 position:relative;
 top:400px
@@ -94,9 +94,9 @@ export const cardWrapper = Style.div`
 export const Card = Style.div`
 background:#e2e7ee;
 height:auto;
-width:390px;
+width:30%;
 border:border-top: 1px solid #7e93ae;
-margin-top:55px
+
 `;
 export const content = Style.div``;
 export const contentHeader = Style.h3`

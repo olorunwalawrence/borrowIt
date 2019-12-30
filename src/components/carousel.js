@@ -63,7 +63,7 @@ export const Slider = () => {
 						<CA.Span onClick={next}>&#8594;</CA.Span>
 					</CA.btnWrapper>
 					<Whirligig
-						visibleSlides={3}
+						visibleSlides={2}
 						gutter="1px"
 						ref={_whirligigInstance => {
 							whirligig = _whirligigInstance;

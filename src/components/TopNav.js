@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 export const TopNav = () => {
 	return (
 		<TP.TopNav>
+			<TP.NavContainer>
 			<TP.para>
 				<TP.WelcomeText Display="none">Welcome to our Borrow Load Website</TP.WelcomeText>
 			</TP.para>
@@ -13,6 +14,7 @@ export const TopNav = () => {
 				<TP.Span>View Location</TP.Span>
 				<TP.Span>+2347015009775</TP.Span>
 			</TP.Container>
+			</TP.NavContainer>
 		</TP.TopNav>
 	);
 };

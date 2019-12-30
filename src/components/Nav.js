@@ -1,23 +1,23 @@
 import React, { Fragment, useState } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import * as NC from '../Styles/Nav';
-import { Search } from '../components/search';
+// import { Search } from '../components/search';
 import { Link } from 'react-router-dom';
 
 import { TopNav } from '../components/TopNav';
 
 export const Navigation = () => {
-	const [search, setSearch] = useState(true);
+	// const [search, setSearch] = useState(true);
 
-	const HandleToggle = () => {
-		setSearch(!search);
-	};
+	// const HandleToggle = () => {
+	// 	setSearch(!search);
+	// };
 
 	return (
 		<Fragment>
-			<NC.Show show={search}>
+			{/* <NC.Show show={search}>
 				<Search />
-			</NC.Show>
+			</NC.Show> */}
 			<TopNav />
 
 			<NC.NavContainer>
@@ -34,23 +34,15 @@ export const Navigation = () => {
 									<Link to="/"> Home</Link>
 								</Nav.Link>
 
-								<NavDropdown title="LOAN PRODUCT" id="collasible-nav-dropdown">
+								<NavDropdown title="Loan Product" id="collasible-nav-dropdown">
 									<NavDropdown.Item>
 										<Link to="/credit-card"> Credit card</Link>
 									</NavDropdown.Item>
-									<NavDropdown.Divider />
-									<NavDropdown.Item href="#action/3.2">Personal Loan</NavDropdown.Item>
-									<NavDropdown.Divider />
-									<NavDropdown.Item href="#action/3.3">Car Loan</NavDropdown.Item>
-									<NavDropdown.Divider />
-									<NavDropdown.Item href="#action/3.4">Home loan</NavDropdown.Item>
-									<NavDropdown.Divider />
-									<NavDropdown.Item href="#action/3.4">Educational loan</NavDropdown.Item>
-									<NavDropdown.Divider />
-									<NavDropdown.Item href="#action/3.4">Proffessional loan</NavDropdown.Item>
+
+									<NavDropdown.Item href="#action/3.4">Loan</NavDropdown.Item>
 								</NavDropdown>
 
-								<NavDropdown title="LOAN PRODUCT" id="collasible-nav-dropdown">
+								<NavDropdown title="About us" id="collasible-nav-dropdown">
 									<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
 									<NavDropdown.Divider />
 									<NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -60,7 +52,7 @@ export const Navigation = () => {
 									<NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
 								</NavDropdown>
 
-								<NavDropdown title="ABOUT US" id="collasible-nav-dropdown">
+								<NavDropdown title="Features" id="collasible-nav-dropdown">
 									<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
 									<NavDropdown.Divider />
 									<NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -70,17 +62,7 @@ export const Navigation = () => {
 									<NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
 								</NavDropdown>
 
-								<NavDropdown title="FEATURES" id="collasible-nav-dropdown">
-									<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-									<NavDropdown.Divider />
-									<NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-									<NavDropdown.Divider />
-									<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-									<NavDropdown.Divider />
-									<NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-								</NavDropdown>
-
-								<NavDropdown title="BANK ACCOUNT" id="collasible-nav-dropdown">
+								<NavDropdown title="Bank Account" id="collasible-nav-dropdown">
 									<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
 									<NavDropdown.Divider />
 									<NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -90,11 +72,11 @@ export const Navigation = () => {
 									<NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
 								</NavDropdown>
 							</Nav>
-							<Nav>
+							{/* <Nav>
 								<NC.Span>
 									<i class="fa fa-search" onClick={HandleToggle}></i>
 								</NC.Span>
-							</Nav>
+							</Nav> */}
 						</Navbar.Collapse>
 					</Navbar>
 				</NC.Container>

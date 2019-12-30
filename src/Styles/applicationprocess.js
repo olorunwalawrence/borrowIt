@@ -5,7 +5,8 @@ height:${props => props.height};
 margin: ${props => props.margin};
 width:${props => props.width};
 background: ${props => props.background};
-
+padding-top:${props => props.paddingTop};
+margin-top:${props => props.marginTop}
 `;
 
 export const Header = Style.h3`
@@ -39,13 +40,15 @@ margin-bottom:${props => props.marginBottom};
 `;
 export const ApplicationHeader = Style.h1`
 text-align:center;
-margin-top:100px;
+margin-top:50px;
+
 `;
 export const ApllicationPara = Style.div``;
 export const ApplicationWrapper = Style.div`
     margin:1px auto;
     width:100%;
-    height:200px;
+    height:160px;
+  
 `;
 
 export const Circle = Style.div`
@@ -72,24 +75,24 @@ width:15%;
 color:#fff;
 font-weight:700;
 border:none;
-margin: 6% 0px 6% 43%;
+margin: 3% 0px 3% 43%;
 
 `;
 export const LinkWrapper = Style.div`
 width:100%;
 display:flex;
 justify-content:center;
-margin-bottom:30px;
+margin-bottom:20px;
 `;
 
 export const Link = Style.div`
 marign:1px auto;
 width:45%;
 border:1px solid #dee4ee;
-padding:15px;
+padding:10px;
 text-align:center;
 color:#9aa9c3;
-font-weight:700;
+font-weight:400;
 text-transform:capitalize;
 `;
 export const imageWrapper = Style.div`

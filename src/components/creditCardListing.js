@@ -264,7 +264,7 @@ export const CreditCardListing = () => {
 						</CD.cardWrapper>
 					</CD.CardContainer>
 				</CD.Banner>
-				<CD.Div position="relative" top="1300px">
+				<CD.Div position="relative" top="1310px">
 					<Footer />
 				</CD.Div>
 			</CD.wrapper>
