@@ -15,7 +15,11 @@ padding:${props => props.padding};
 text-align:${props => props.align};
 border:${props => props.border};
 height:${props => props.height};
+font-size:${props => props.size};
+margin-bottom =:${props => props.marginbottom};
 `;
 export const Form = Style.form`
 width:${props => props.width};
 `;
+
+export const label = Style.label``;
