@@ -1,0 +1,66 @@
+import Style from 'styled-components';
+export const AboutUscontainer = Style.div`
+height:auto;
+width:100%;
+font-family;Poppins, sans-serif;
+`;
+
+export const Cover = Style.div`
+background :${props => props.background};
+margin:${props => props.margin};
+text-align:${props => props.align};
+width:${props => props.width};
+
+`;
+
+export const aboutusWrapper = Style.div`
+
+
+
+`;
+
+export const wrapper = Style.div`
+width:80%;
+margin:0px auto;
+`;
+
+export const banner = Style.div`
+background:url("https://homenets.ng/wp-content/uploads/2018/02/contactus-banner.jpg");
+height:450px;
+width:100%;
+background-repeat:no-repeat;
+background-size:100% 100%;
+`;
+
+export const section1 = Style.div`
+position:relative;
+top:-40px;
+height:auto;
+background:#fff;
+display:flex;
+
+
+`;
+export const Textheader = Style.h2`
+text-align:${props => props.align};
+color:#3c4d68;
+padding-top:${props => props.paddingTop};
+padding-bottom:${props => props.paddingBottom};
+
+`;
+
+export const Para = Style.p`
+padding-top:50px
+text-align:${props => props.align};
+padding-Bottom:${props => props.paddingBottom};
+`;
+
+export const Text = Style.div`
+width:50%;
+padding-right:40px
+padding-left:50px;
+`;
+export const Span = Style.span`
+font-size:21px;
+
+`;

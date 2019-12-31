@@ -7,6 +7,7 @@ import { creditCardListingPage } from '../src/pages/creditCardListing';
 import { Login } from '../src/pages/login';
 import { SinglePageCard } from '../src/pages/singleCard';
 import { CashLoan } from '../src/pages/loan';
+import { AboutUs } from '../src/pages/aboutUs';
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 				<Route path="/login" component={Login} />
 				<Route path="/card-single" component={SinglePageCard} />
 				<Route path="/loan" component={CashLoan} />
+				<Route path="/about-us" component={AboutUs} />
 			</Switch>
 		</Router>
 	);
