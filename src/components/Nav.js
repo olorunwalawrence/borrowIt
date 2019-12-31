@@ -39,7 +39,10 @@ export const Navigation = () => {
 										<Link to="/credit-card"> Credit card</Link>
 									</NavDropdown.Item>
 
-									<NavDropdown.Item href="#action/3.4">Loan</NavDropdown.Item>
+									<NavDropdown.Item>
+										{' '}
+										<Link to="/loan">Loan</Link>
+									</NavDropdown.Item>
 								</NavDropdown>
 
 								<NavDropdown title="About us" id="collasible-nav-dropdown">

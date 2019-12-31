@@ -10,7 +10,7 @@ margin-left:40px;
 `;
 export const BannerWrapper = Style.div``;
 export const banner = Style.div`
-background:url("https://i.pinimg.com/originals/85/aa/49/85aa497382cb2a7d9f5164f426c93d5a.jpg");
+background:url("https://www.doughroller.net/wp-content/uploads/2019/05/apps-that-loan-you-money-now-payday-loan-alternatives-648x364-c-default.jpg");
 height:450px;
 width:100%;
 background-repeat:no-repeat;
