@@ -44,16 +44,9 @@ export const Navigation = () => {
 										<Link to="/loan">Loan</Link>
 									</NavDropdown.Item>
 								</NavDropdown>
-
-								<NavDropdown title="About us" id="collasible-nav-dropdown">
-									<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-									<NavDropdown.Divider />
-									<NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-									<NavDropdown.Divider />
-									<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-									<NavDropdown.Divider />
-									<NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-								</NavDropdown>
+								<Nav.Link>
+									<Link to="/about-us"> About us</Link>
+								</Nav.Link>
 
 								<NavDropdown title="Features" id="collasible-nav-dropdown">
 									<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
