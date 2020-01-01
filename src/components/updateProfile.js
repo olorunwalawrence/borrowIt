@@ -1,23 +1,20 @@
 import React, { Fragment, useState } from 'react';
 import * as CL from '../Styles/loan';
-import * as SD from '../Styles/singleCard';
+import * as UP from '../Styles/updateProfile';
+
+// import * as SD from '../Styles/singleCard';
 import * as FM from '../Styles/form';
 import { InputRanges } from '../components/input-range';
 
-export const Loan = () => {
-	const [value, setValue] = useState({ min: 1000, max: 1000000 });
+export const UpdateProfile = () => {
 	return (
 		<Fragment>
-			<SD.BannerWrapper>
-				<SD.banner></SD.banner>
-			</SD.BannerWrapper>
-
-			<CL.FormContainer>
+			<UP.Container>
 				<CL.formWrapper>
-					<CL.Div align="center" marginBottom="40px" size="1.5rem" color="#15549a">
-						To get a Loan kindly Fill the Form Below
-					</CL.Div>
-					<CL.Div width="70%" margin="1px auto" marginTop="70px" background="#f8f9fa" padding="20px">
+					{/* <CL.Div align="center" marginBottom="40px" size="1.5rem" color="#15549a">
+						Update my Profile
+					</CL.Div> */}
+					<CL.Div background="#f8f9fa" padding="10px">
 						<FM.Form>
 							<CL.FormRow className="form-row">
 								<CL.Div className="form-group col-md-6">
@@ -58,6 +55,10 @@ export const Loan = () => {
 									<FM.Input type="text" className="form-control" placeholder="Country" />
 								</CL.Div>
 								<CL.Div className="form-group col-md-6">
+									<FM.label for="country">Date of Birth</FM.label>
+									<FM.Input type="date" className="form-control" placeholder="Country" />
+								</CL.Div>
+								{/* <CL.Div className="form-group col-md-6">
 									<FM.label for="Loan">Loan Type</FM.label>
 
 									<select id="inputState" class="form-control">
@@ -65,22 +66,21 @@ export const Loan = () => {
 										<option>Credit Card.</option>
 										<option>Cash</option>
 									</select>
-								</CL.Div>
-								<CL.Div className="form-group col-md-12">
+								</CL.Div> */}
+								{/* <CL.Div className="form-group col-md-12">
 									<FM.label for="Amount">Amount</FM.label>
 									<InputRanges value={value} setValue={setValue} />
-								</CL.Div>
+								</CL.Div> */}
 							</CL.FormRow>
-
 							<CL.formGroup className="form-group">
-								<CL.Div className="form-group col-md-6">
-									<FM.label for="Year">Year</FM.label>
-									<FM.Input type="date" className="form-control" placeholder="Year" />
+								<CL.Div className="form-group col-md-12">
+									<FM.label for="address"> Office Address</FM.label>
+									<FM.Input type="text" className="form-control" placeholder=" Office Address" />
 								</CL.Div>
 							</CL.formGroup>
 							<CL.formGroup className="form-group">
 								<CL.Div className="form-group col-md-12">
-									<FM.label for="address"> Office Address</FM.label>
+									<FM.label for="address"> Home Address</FM.label>
 									<FM.Input type="text" className="form-control" placeholder=" Office Address" />
 								</CL.Div>
 							</CL.formGroup>
@@ -98,12 +98,12 @@ export const Loan = () => {
 								size="20px"
 								border="none"
 							>
-								Submit Request
+								Update Profile
 							</FM.Button>
 						</FM.Form>
 					</CL.Div>
 				</CL.formWrapper>
-			</CL.FormContainer>
+			</UP.Container>
 		</Fragment>
 	);
 };

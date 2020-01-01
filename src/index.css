@@ -25,3 +25,18 @@ a:hover {
 	text-decoration: none;
 	color: lightgray;
 }
+
+.nav-link {
+	padding-top: 20px;
+}
+
+.nav-link:hover {
+	color: rgb(110, 106, 106);
+}
+.nav {
+	background: #f5f7f9;
+}
+
+.form-group {
+	padding-top: 10px;
+}
