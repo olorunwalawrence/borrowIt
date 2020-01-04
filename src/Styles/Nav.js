@@ -8,7 +8,6 @@ display:block;
 `;
 export const Container = Style.div`
 flex:2;
-padding-top:30px;
 @media(max-width:450px){
 padding-top:0px;
 }
