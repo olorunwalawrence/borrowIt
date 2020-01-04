@@ -19,6 +19,7 @@ export const SignupAuthentication = () => {
 				<SA.SiteLogo></SA.SiteLogo>
 			</SA.SignupLeft>
 			<SA.Signupright>
+				<Link to="/">Home</Link>
 				<SA.SignupHeadText>
 					Already have an account? <Link to="/login">Signin </Link>
 				</SA.SignupHeadText>
@@ -27,50 +28,48 @@ export const SignupAuthentication = () => {
 						<SA.formGroup className="form-group col-md-6">
 							<SA.FormInput
 								type="text"
-								name="username"
-								placeholder="username"
+								name="firstname"
+								placeholder="first Name"
+								className="form-control"
+								onChange={handleChange}
+							/>
+						</SA.formGroup>
+						<SA.formGroup className="form-group col-md-6">
+							<SA.FormInput
+								type="text"
+								name="Lastname"
+								placeholder="Last Name"
+								className="form-control"
+								onChange={handleChange}
+							/>
+						</SA.formGroup>
+						<SA.formGroup className="form-group col-md-6">
+							<SA.FormInput
+								type="text"
+								name="Username"
+								placeholder="Username"
 								className="form-control"
 								onChange={handleChange}
 							/>
 						</SA.formGroup>
 
 						<SA.formGroup className="form-group col-md-6">
-							<SA.FormInput
-								type="number"
-								name="phoneNumber"
-								placeholder="Phone Number"
-								className="form-control"
-							/>
+							<SA.FormInput type="email" name="" placeholder="Email" className="form-control" />
 						</SA.formGroup>
-
-						<SA.formGroup className="form-group col-lg-12">
-							<SA.FormInput
-								type="text"
-								name="userAddress"
-								placeholder="Full Address"
-								className="form-control"
-							/>
-						</SA.formGroup>
-
-						{/* <SA.formGroup className="form-group col-md-6">
-							<SA.FormInput
-								type="text"
-								name="deliveryAddress"
-								placeholder="Full Address"
-								className="form-control"
-	
-							/>
-						</SA.formGroup> */}
-
 						<SA.formGroup className="form-group col-md-6">
-							<SA.FormInput type="email" name="email" placeholder="Email" class="form-control" />
+							<SA.FormInput type="password" name="" placeholder="Password" className="form-control" />
 						</SA.formGroup>
-
 						<SA.formGroup className="form-group col-md-6">
-							<SA.FormInput type="password" name="password" placeholder="Password" class="form-control" />
+							<SA.FormInput type="text" name="" placeholder="Country" className="form-control" />
 						</SA.formGroup>
+						<SA.formGroup className="form-group col-md-6">
+							<SA.FormInput type="text" name="" placeholder="state" className="form-control" />
+						</SA.formGroup>
+						<SA.formGroup className="form-group col-md-6">
+							<SA.FormInput type="date" name="" placeholder="Date of birth" className="form-control" />
+						</SA.formGroup>
+						<SA.SignupBotton type="button">sign Up</SA.SignupBotton>
 					</SA.formRow>
-					<SA.SignupBotton type="button"></SA.SignupBotton>
 				</SA.Form>
 			</SA.Signupright>
 		</SA.signupContainer>

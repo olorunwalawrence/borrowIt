@@ -4,6 +4,10 @@ export const signupContainer = Style.div`
   display:flex;
 
 `;
+export const PTag = Style.p`
+text-align:right;
+padding-right:30px;
+`;
 
 export const SignupLeft = Style.div`
   flex:1;

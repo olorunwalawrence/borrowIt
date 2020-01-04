@@ -7,8 +7,7 @@ export const signupContainer = Style.div`
 
 export const SignupLeft = Style.div`
   flex:1;
-  background-image: url("https://images.pexels.com/photos/264547/pexels-photo-264547.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500(28 kB)
-");
+background:url("https://myupdatesystems.com/wp-content/uploads/2018/03/addiction-professional-networking-events-behavioral-health-network-resources.jpg");
   background-size: cover;
    background-position: left 40%;
   background-repeat: no-repeat;
@@ -17,7 +16,8 @@ export const SignupLeft = Style.div`
 `;
 export const Signupright = Style.div`
   flex:1;
-
+text-align:right;
+padding-right:30px;
 `;
 export const FormInput = Style.input`
 background: #fff;

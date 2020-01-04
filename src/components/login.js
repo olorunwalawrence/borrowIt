@@ -15,6 +15,10 @@ export const LoginAuthentication = () => {
 			</SI.SignupLeft>
 
 			<SI.Signupright>
+				<SI.PTag>
+					<Link to="/">Home</Link>
+				</SI.PTag>
+
 				<SI.SignupRightContainer>
 					<SI.Div>Welcome Back!</SI.Div>
 
