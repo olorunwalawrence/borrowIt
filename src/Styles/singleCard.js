@@ -19,7 +19,9 @@ background-size:cover;
 
 export const SinglecardTop = Style.div`
 display:flex;
-
+@media(max-width:450px){
+    display:block
+}
 `;
 
 export const text = Style.div`
@@ -29,12 +31,20 @@ text-align:justify;
 font-weight:700;
 color:#778191;
 width:500px;
+@media(max-width:450px){
+   width:100%;
+   padding:10px;
+   padding-top:40px;
+}
 `;
 export const header = Style.p`
 color: #3c4d6b;
 font-size:30px;
 text-align:center;
 margin-top:-30px;
+@media(max-width:450px){
+    font-size:20px;
+}
 `;
 export const BtnAction = Style.div`
 padding-top:12px;
@@ -46,6 +56,9 @@ font-weight:500;
 text-align:center;
 margin-top:20px;
 height:50px;
+@media(max-width:450px){
+    width:100%;
+}
 `;
 
 export const secondSection = Style.div`
@@ -69,6 +82,9 @@ color: #778191;
 export const Tab = Style.div`
 margin-top:100px;
 border:1px solid #dee7f2;
+@media(max-width:450px){
+    display:none;
+}
 `;
 
 export const FlexibilitytWrapper = Style.div`

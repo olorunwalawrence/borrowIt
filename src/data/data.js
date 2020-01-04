@@ -74,9 +74,42 @@ export const Account = [
 
 export const Transaction = [
 	{
+		id: 1,
+		cardnumber: 12345678456,
+		date: Date(),
+		amount: '#30000',
+		balance: '150,000',
+		cardType: 'premium',
+		status: 'loan',
+		paymentStatus: 'not payed',
+		cardStatus: 'loan',
+
+		payback: 'pay back',
+	},
+	{
+		id: 2,
+		cardnumber: 12345678456,
+		date: Date(),
+		amount: '#30000',
+		balance: '150,000',
+		cardType: 'premium',
+		status: 'loan',
+		paymentStatus: 'not payed',
+		time: new Date().getTime(),
+
+		payback: 'pay back',
+	},
+	{
+		id: 3,
 		cardnumber: 12345678456,
 		date: Date.now(),
-		amountspent: '#30000',
+		amount: '#30000',
 		balance: '150,000',
+		cardType: 'premium',
+		status: 'loan',
+		paymentStatus: 'not payed',
+		cardStatus: 'loan',
+
+		payback: 'pay back',
 	},
 ];

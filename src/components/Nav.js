@@ -21,9 +21,9 @@ export const Navigation = () => {
 			<TopNav />
 
 			<NC.NavContainer>
-				<NC.LogoCOntainer>
-					<NC.Img src={require('../assests/images/logo.png')}></NC.Img>
-				</NC.LogoCOntainer>
+				{/* <NC.LogoCOntainer>
+					<NC.Img src={require('../assests/images/s.png')}></NC.Img>
+				</NC.LogoCOntainer> */}
 
 				<NC.Container>
 					<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">

@@ -40,3 +40,7 @@ a:hover {
 .form-group {
 	padding-top: 10px;
 }
+
+.react-bootstrap-table{
+	overflow-x: scroll;
+}

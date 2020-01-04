@@ -5,7 +5,7 @@ export const MyProfile = props => {
 	return (
 		<MP.profileContainer>
 			<MP.profileWrapper>
-				{/* <MP.Header>My Profile</MP.Header> */}
+				<MP.Header>My Profile</MP.Header>
 				{profile.map(data => (
 					<Fragment>
 						<MP.Img src={data.img} alt="my profile image" />

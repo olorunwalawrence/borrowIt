@@ -24,6 +24,7 @@ export const LoanCards = () => {
 			title: 'Reward',
 		},
 	];
+
 	return (
 		<LC.cardContainer>
 			{Loans.map(loan => (

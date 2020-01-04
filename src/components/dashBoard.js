@@ -1,127 +1,102 @@
-import React, { Fragment } from 'react';
-
+import React from 'react';
+import { Link } from 'react-router-dom';
+import BootstrapTable from 'react-bootstrap-table-next';
+import { BorrowCard } from '../components/borrowCard';
+import * as BC from '../Styles/borrowcard';
 import * as AC from '../Styles/dashBoard';
-import * as ABT from '../Styles/aboutUs';
-import { MyProfile } from '../components/my_profile';
-import { MyAccount } from '../components/my-account';
-import { Transactions } from '../components/transactions';
-import { UpdateProfile } from '../components/updateProfile';
+import * as CD from '../Styles/creditCardListing';
+import { Transaction } from '../data/data';
+
+import { HarmBurger } from '../components/hambugger/hamBurger';
+
+const column = [
+	{
+		name: 'olorunwa',
+		lname: 'lawrence',
+	},
+];
 
 export const Dashboard = () => {
+	const columns = [
+		{
+			dataField: 'id',
+			text: 'Transacction ID',
+		},
+		{
+			dataField: 'cardnumber',
+			text: 'Card Number',
+		},
+		{
+			dataField: 'date',
+			text: 'Date',
+		},
+		{
+			dataField: 'balance',
+			text: 'Balance',
+		},
+		{
+			dataField: 'cardType',
+			text: 'Card Type',
+		},
+		{
+			dataField: 'status',
+			text: 'Status',
+		},
+		{
+			dataField: 'paymentStatus',
+			text: 'Payment Status',
+		},
+		{
+			dataField: 'time',
+			text: 'transaction time',
+		},
+		{
+			dataField: 'payback',
+			text: 'action button',
+		},
+	];
+
 	return (
-		<Fragment>
-			<AC.AccountContainer>
-				<AC.Wrapper>
-					<ABT.banner></ABT.banner>
-					<AC.Cover>
-						<AC.Div>
-							<AC.Header>my Account Dashboard</AC.Header>
-						</AC.Div>
-						<div class="row">
-							<div class="col-3">
-								<div
-									class="nav flex-column nav-pills"
-									id="v-pills-tab"
-									role="tablist"
-									aria-orientation="vertical"
-								>
-									<a
-										class="nav-link active"
-										id="v-pills-home-tab"
-										data-toggle="pill"
-										href="#v-pills-home"
-										role="tab"
-										aria-controls="v-pills-home"
-										aria-selected="true"
-									>
-										My Profile
-									</a>
-									<a
-										class="nav-link"
-										id="v-pills-profile-tab"
-										data-toggle="pill"
-										href="#v-pills-profile"
-										role="tab"
-										aria-controls="v-pills-profile"
-										aria-selected="false"
-									>
-										My Account
-									</a>
-									<a
-										class="nav-link"
-										id="v-pills-messages-tab"
-										data-toggle="pill"
-										href="#v-pills-messages"
-										role="tab"
-										aria-controls="v-pills-messages"
-										aria-selected="false"
-									>
-										Transactions
-									</a>
-									<a
-										class="nav-link"
-										id="v-pills-settings-tab"
-										data-toggle="pill"
-										href="#v-pills-settings"
-										role="tab"
-										aria-controls="v-pills-settings"
-										aria-selected="false"
-									>
-										Update Profile
-									</a>
-									<a
-										class="nav-link"
-										id="v-pills-settings-tab"
-										data-toggle="pill"
-										href="#v-pills-settings"
-										role="tab"
-										aria-controls="v-pills-settings"
-										aria-selected="false"
-									>
-										Loan Payback
-									</a>
-								</div>
-							</div>
-							<div class="col-9">
-								<div class="tab-content" id="v-pills-tabContent">
-									<div
-										class="tab-pane fade show active"
-										id="v-pills-home"
-										role="tabpanel"
-										aria-labelledby="v-pills-home-tab"
-									>
-										<MyProfile />
-									</div>
-									<div
-										class="tab-pane fade"
-										id="v-pills-profile"
-										role="tabpanel"
-										aria-labelledby="v-pills-profile-tab"
-									>
-										<MyAccount />
-									</div>
-									<div
-										class="tab-pane fade"
-										id="v-pills-messages"
-										role="tabpanel"
-										aria-labelledby="v-pills-messages-tab"
-									>
-										<Transactions />
-									</div>
-									<div
-										class="tab-pane fade"
-										id="v-pills-settings"
-										role="tabpanel"
-										aria-labelledby="v-pills-settings-tab"
-									>
-										<UpdateProfile />
-									</div>
-								</div>
-							</div>
-						</div>
-					</AC.Cover>
+		<AC.AccountContainer>
+			<AC.Cover>
+				<AC.Div>
+					<HarmBurger />
+				</AC.Div>
+				<AC.Wrapper
+					display="flex"
+					justifyContent="space-around"
+					mediaflexdirection="column"
+					mediaAlignItems="center"
+				>
+					<AC.Card>
+						<CD.Div display="flex" justifyContent="space-around" marginTop="30px">
+							<BC.BorrowWrapper background="#20c997" color="#fff">
+								<BorrowCard cardtype={'Money Back'} />
+							</BC.BorrowWrapper>
+						</CD.Div>
+					</AC.Card>
+					<AC.Card>
+						<CD.Div display="flex" justifyContent="space-around" marginTop="30px">
+							<BC.BorrowWrapper background="#20c997" color="#fff">
+								<BorrowCard cardtype={'Money Back'} />
+							</BC.BorrowWrapper>
+						</CD.Div>
+					</AC.Card>
+					<AC.Card>
+						<CD.Div display="flex" justifyContent="space-around" marginTop="30px">
+							<BC.BorrowWrapper background="#20c997" color="#fff">
+								<BorrowCard cardtype={'Money Back'} />
+							</BC.BorrowWrapper>
+						</CD.Div>
+					</AC.Card>
 				</AC.Wrapper>
-			</AC.AccountContainer>
-		</Fragment>
+				<AC.Wrapper paddingTop="5%">
+					<AC.Header>Transactions Details</AC.Header>
+				</AC.Wrapper>
+				<AC.Wrapper padding="1.5%">
+					<BootstrapTable keyField="id" data={Transaction} columns={columns} />
+				</AC.Wrapper>
+			</AC.Cover>
+		</AC.AccountContainer>
 	);
 };
