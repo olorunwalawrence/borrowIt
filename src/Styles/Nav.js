@@ -8,13 +8,19 @@ display:block;
 `;
 export const Container = Style.div`
 flex:2;
-@media(max-width:360px){
-
+padding-top:30px;
+@media(max-width:450px){
+padding-top:0px;
 }
 `;
 
 export const LogoCOntainer = Style.div`
 flex:1;
+
+@media(max-width:360px){
+display:none;
+
+}
 `;
 
 export const Img = Style.img`

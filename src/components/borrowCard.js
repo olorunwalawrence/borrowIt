@@ -7,12 +7,12 @@ export const BorrowCard = props => {
 			<BC.BorrowWrapper color="#fff">
 				<BC.Top display="flex">
 					<BC.Div>
-						<BC.Para marginLeft="20px" paddingTop="10px">
+						<BC.Para>
 							<BC.Span>Borrow</BC.Span>
 							<br /> Credit card
 						</BC.Para>
 					</BC.Div>
-					<BC.Para margin="10px">
+					<BC.Para>
 						<BC.Span>{props.cardtype}</BC.Span>
 					</BC.Para>
 				</BC.Top>
@@ -22,24 +22,36 @@ export const BorrowCard = props => {
 						<BC.Img src={require('../assests/images/chip.PNG')} />
 					</BC.ChipContainer>
 				</BC.Chip>
-				<BC.Div display="flex" marginLeft="41px" width="70%" justifyContent="space-between">
+
+				<BC.Div
+					display="flex"
+					marginLeft="41px"
+					width="70%"
+					justifyContent="space-between"
+					mediaJustify="space-between"
+				>
 					<BC.Dash></BC.Dash>
 					<BC.Dash></BC.Dash>
 					<BC.Dash></BC.Dash>
 					<BC.Dash></BC.Dash>
 				</BC.Div>
 
-				<BC.Div display="flex">
-					<BC.Div display="flex" flex="1" marginLeft="20px" marginTop="10px">
+				<BC.Div
+					display="flex"
+					justifyContent="space-between"
+					paddingTop="0.8rem"
+					width="100%"
+					mediaJustify="space-between"
+				>
+					<BC.Div display="flex" flex="1.5" mediaflex="2" mediaJustify="space-between">
 						<BC.Para>valid from</BC.Para>
-						<BC.Date marginRight="10px" marginTop="10px">
-							01/20
-						</BC.Date>
+						<BC.Date>01/20</BC.Date>
 						<BC.Para>valid thru</BC.Para>
-						<BC.Date marginTop="10px">16/23</BC.Date>
+						<BC.Date>16/23</BC.Date>
 					</BC.Div>
-					<BC.Div display="flex" flex="1" justifyContent="flex-end" marginRight="40px" marginTop="20px">
-						<BC.FirstCircle marginLeft="20px"></BC.FirstCircle>
+
+					<BC.Div display="flex" flex="1" mediaflex="1" mediaJustify="space-between">
+						<BC.FirstCircle></BC.FirstCircle>
 						<BC.SecondCircle></BC.SecondCircle>
 					</BC.Div>
 				</BC.Div>

@@ -1,7 +1,9 @@
 import Style from 'styled-components';
 
 export const Container = Style.div``;
-export const wrapper = Style.div``;
+export const wrapper = Style.div`
+
+`;
 export const wrapperContainer = Style.div`
 display:${props => props.display};
 background:${props => props.background};
@@ -51,14 +53,25 @@ justify-content:${props => props.justifyContent};
 margin-right:${props => props.marginRight};
 margin-bottom:${props => props.marginBottom};
 position:${props => props.position};
-top:${props => props.top}
+top:${props => props.top};
 
+@media  only screen and (max-width:800px){
+    display:${props => props.mediaDisplay};
 
+}
+@media  only screen and (max-width:450px){
+    display:${props => props.mediaDispaly};
+    top:${props => props.MediaTop};
+    margin-left:${props => props.mediaMarginLeft};
+    margin-right:${props => props.mediaMarginRight};
+    margin-top:${props => props.mediaMarginTop};
+}
 `;
 
 export const BtnAction = Style.div`
 flex:1;
-margin-left:20px;
+margin-right:10px;
+margin-left:15px;
 `;
 export const PageTitle = Style.h1`
 flex:1
@@ -82,20 +95,35 @@ background:#fff;
 height:auto;
 width:81%;
 margin:1px auto;
-position:relative;
-top:400px
+position: relative;
+top: -60px;
 
 `;
 
 export const cardWrapper = Style.div`
+display:flex;
+width:100%;
+flex-wrap:wrap;
+justify-content:space-between;
 
-
+height:auto;
+padding:20px;
 `;
 export const Card = Style.div`
 background:#e2e7ee;
 height:auto;
 width:30%;
-border:border-top: 1px solid #7e93ae;
+border-bottom: 1px solid #7e93ae;
+padding:15px;
+margin-top: 37px;
+padding:10px;
+@media  only screen and (max-width:1024px){
+  width:48%;
+}
+@media  only screen and (max-width:450px){
+    width:100%;
+
+}
 
 `;
 export const content = Style.div``;

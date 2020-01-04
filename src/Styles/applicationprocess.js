@@ -27,6 +27,7 @@ font-style :${props => props.Style};
 line-height :${props => props.lineHignt};
 font-weight:${props => props.fontWeight};
 font-size:${props => props.fontSize};
+
 `;
 
 export const wrapper = Style.div`
@@ -36,7 +37,10 @@ width:${props => props.width};
 height:${props => props.height};
 background:${props => props.background};
 margin-bottom:${props => props.marginBottom};
-
+@media(max-width:450px){
+    display:block;
+ 
+    }
 `;
 export const ApplicationHeader = Style.h1`
 text-align:center;
@@ -48,6 +52,9 @@ export const ApplicationWrapper = Style.div`
     margin:1px auto;
     width:100%;
     height:160px;
+    @media(max-width:450px){
+        margin-bottom:50px
+    }
   
 `;
 
@@ -66,6 +73,12 @@ export const Circle = Style.div`
     left: 38%;
     font-weight:500;
     font-size:25px
+@media only screen and (max-width:800px){
+        left:30%;
+    }
+@media only screen and (max-width:450px){
+        left:36%;
+    }
 `;
 export const Button = Style.button`
 text-align:center;
@@ -76,6 +89,14 @@ color:#fff;
 font-weight:700;
 border:none;
 margin: 3% 0px 3% 43%;
+@media(max-width:450px){
+width:50%;
+margin: 3% 0px 3% 27%;
+ }
+@media(max-width:800px){
+width:50%;
+margin: 3% 0px 3% 24%;
+ }
 
 `;
 export const LinkWrapper = Style.div`
@@ -94,6 +115,9 @@ text-align:center;
 color:#9aa9c3;
 font-weight:400;
 text-transform:capitalize;
+@media(max-width:800px){
+    width:100%;
+}
 `;
 export const imageWrapper = Style.div`
 display:flex;

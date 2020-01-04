@@ -1,9 +1,9 @@
 import Style from 'styled-components';
 
 export const BorrowContainer = Style.div`
-height:205px;
-max-width:330px;
-font-size:13px;
+height:auto;
+width:auto;
+font-size:0.8rem;
 `;
 
 export const ChipContainer = Style.div`
@@ -15,18 +15,20 @@ height:auto;
 border-radius:10px;
 Background:${props => props.background};
 color:${props => props.color};
-font-size:13px
+font-size:inherit;
+width:100%;
+padding:5px 5px;
 `;
 export const Chip = Style.div`
 border-radius:20px;
 `;
 export const Img = Style.img`
 margin-left:40px;
-margin-bottom:10px;
+margin-bottom:0.5rem;
 `;
 export const FirstCircle = Style.div`
-width:40px;
-height:40px;
+width:2rem;
+height:2rem;
 background:red;
 border-radius:100px;
 position: relative;
@@ -34,23 +36,22 @@ left: 20px;
 }
 `;
 export const SecondCircle = Style.div`
-width:40px;
-height:40px;
+width:2rem;
+height:2rem;
 background:gold;
 border-radius:100px;
 `;
 export const Span = Style.span`
-font-weight:500;
+
 `;
 
 export const Top = Style.div`
 display:${props => props.display};
-justify-content:space-between
+justify-content:space-between;
+
 `;
 export const Para = Style.p`
-margin: ${props => props.margin};
-padding-top:${props => props.paddingTop};
-margin-left:${props => props.marginLeft};
+
 `;
 export const Dash = Style.div`
 background:#f4f6f8;
@@ -60,10 +61,7 @@ border-radius:15px;
 height:8px;
 `;
 export const cardFooter = Style.div`
-margin:2px;
-margin-left:20px
 
-padding-bottom:10px
 `;
 export const Div = Style.div`
 display:${props => props.display};
@@ -82,8 +80,19 @@ top:${props => props.top};
 padding-top:${props => props.paddingTop};
 border-bottom:${props => props.borderBotton}
 border : ${props => props.border};
+
+@media  only screen and (max-width:360px){
+  justify-content:${props => props.mediaJustify};
+  flex:${props => props.mediaflex};
+}
+
 `;
 export const Date = Style.div`
 margin-right: ${props => props.marginRight};
+padding-right:10px
+
+@media  only screen and (max-width:360px){
+  padding-right:5px
+}
 
 `;

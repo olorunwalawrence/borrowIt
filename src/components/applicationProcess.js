@@ -4,9 +4,6 @@ import * as Card from '../Styles/card';
 import { data } from '../data/data';
 
 export const Applicationprocess = () => {
-	const Data = data.map(data => {
-		return data;
-	});
 	const ApplicationInfo = [
 		{
 			title: 'Choose Loan Amount',

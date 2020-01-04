@@ -38,7 +38,9 @@ top:-40px;
 height:auto;
 background:#fff;
 display:flex;
-
+@media  only screen and (max-width:450px){
+  flex-direction:column;
+}
 
 `;
 export const Textheader = Style.h2`
@@ -46,6 +48,10 @@ text-align:${props => props.align};
 color:#3c4d68;
 padding-top:${props => props.paddingTop};
 padding-bottom:${props => props.paddingBottom};
+@media  only screen and (max-width:450px){
+  padding:20px;
+  font-size:25px;
+}
 
 `;
 
@@ -59,6 +65,11 @@ export const Text = Style.div`
 width:50%;
 padding-right:40px
 padding-left:50px;
+@media  only screen and (max-width:450px){
+ width:100%;
+
+
+}
 `;
 export const Span = Style.span`
 font-size:21px;
