@@ -7,7 +7,9 @@ export const TopNav = () => {
 		<TP.TopNav>
 			<TP.NavContainer>
 				<TP.para>
-					<TP.WelcomeText Display="none">Easy Funds</TP.WelcomeText>
+					<TP.WelcomeText Display="none">
+						<Link to="/">Easy Funds</Link>
+					</TP.WelcomeText>
 				</TP.para>
 
 				<TP.Container>

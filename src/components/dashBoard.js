@@ -9,13 +9,6 @@ import { Transaction } from '../data/data';
 
 import { HarmBurger } from '../components/hambugger/hamBurger';
 
-const column = [
-	{
-		name: 'olorunwa',
-		lname: 'lawrence',
-	},
-];
-
 export const Dashboard = () => {
 	const columns = [
 		{

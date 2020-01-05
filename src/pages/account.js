@@ -1,14 +1,14 @@
 import React, { Fragment } from 'react';
-import { Dashboard } from '../components/dashBoard';
+import { UserAccount } from '../components/account';
 import { Navigation } from '../components/Nav';
 import { Footer } from '../components/footer';
 import { TopNav } from '../components/TopNav';
 
-export const Dashboards = () => {
+export const AccountDashboard = () => {
 	return (
 		<Fragment>
 			<TopNav />
-			<Dashboard />
+			<UserAccount />
 		</Fragment>
 	);
 };

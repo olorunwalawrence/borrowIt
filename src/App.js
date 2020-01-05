@@ -8,7 +8,8 @@ import { Login } from '../src/pages/login';
 import { SinglePageCard } from '../src/pages/singleCard';
 import { CashLoan } from '../src/pages/loan';
 import { AboutUs } from '../src/pages/aboutUs';
-import { AccountDashboard } from '../src/pages/dashboard';
+import { Dashboards } from '../src/pages/dashboard';
+import { AccountDashboard } from '../src/pages/account';
 
 function App() {
 	return (
@@ -21,7 +22,8 @@ function App() {
 				<Route path="/card-single" component={SinglePageCard} />
 				<Route path="/loan" component={CashLoan} />
 				<Route path="/about-us" component={AboutUs} />
-				<Route path="/dashboard" component={AccountDashboard} />
+				<Route path="/dashboard" component={Dashboards} />
+				<Route path="/account" component={AccountDashboard} />
 			</Switch>
 		</Router>
 	);
