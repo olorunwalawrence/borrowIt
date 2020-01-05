@@ -63,12 +63,8 @@ export const Account = [
 		bvn: 23456789654,
 		loantype: 'credit card',
 		balance: '150,0000',
-		tansactions: {
-			cardnumber: 12345678456,
-			date: Date.now,
-			amountspent: '#30000',
-			balance: '150,000',
-		},
+		cardType: 'premium',
+		paymentStatus: 'unpayed',
 	},
 ];
 
